@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="main">
+            <div class="header">
+                <h1 id="title">Survey Form</h1>
+                <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+            </div>
+            <form id="survey-form" class="form">
+                <label id="name-label">
+                    Name
+                    <input type="text" id="name" class="input input--text" required placeholder="Enter your Name">
+                </label>
+                <label id="email-label">
+                    Email
+                    <input type="email" id="email" class="input input--text" required placeholder="Enter your Email">
+                </label>
+                <label id="number-label">
+                    Age<label class="hint">(optional)</label>
+                    <input type="number" id="number" min="10" max="99" class="input input--text" placeholder="Age">
+                </label>
+                <label>
+                    Which option best describes your current role?
+                    <select id="dropdown" class="input input--text">
+                        <option disabled selected>Select a current role</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>
+                    Whould you recommend freeCodeCamp to a friend?
+                    <div class="align-center top-gap"><input class="input input--radio" name="recommend" type="radio" value="definitely">Definitely</div>
+                    <div class="align-center"><input class="input input--radio" name="recommend" type="radio" value="maybe">Maybe</div>
+                    <div class="align-center"><input class="input input--radio" name="recommend" type="radio" value="notSure">Not sure</div>
+                </label>
+                <label>
+                    What is your favorite feature of freeCodeCamp?
+                    <select id="dropdown-feature" class="input input--text">
+                        <option disabled selected>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Opensource</option>
+                    </select>
+                </label>
+                <label>
+                    What would you like to see improved?<label class="hint">(Check all that apply)</label>
+                    <div class="align-center top-gap"><input class="input input--radio" name="improves" type="checkbox" value="frontProjects">Front-end Projects</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="backProjects">Back-end Projects</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="dataVisualization">Data Visualization</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="challenges">Challenges</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="openSourceCommunity">Open Source Community</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="gitterHelpRooms">Gitter help rooms</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="videos">Videos</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="cityMeetups">City Meetups</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="wiki">Wiki</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="forum">Forum</div>
+                    <div class="align-center"><input class="input input--radio" name="improves" type="checkbox" value="additionalCourses">Additional Courses</div>
+                </label>
+                <label>
+                    Any comments or suggestions?
+                    <textarea class="input input--text" type="textarea" rows="5" placeholder="Enter your comments here..."></textarea>
+                </label>
+                <button id="submit" class="button button--submit">Submit</button>
+            </form>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
